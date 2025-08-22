@@ -1,6 +1,6 @@
 ﻿namespace Yunos_Aifa_02_Lab
 {
-    partial class Form1
+    partial class QueuingForm
     {
         /// <summary>
         /// Required designer variable.
@@ -43,14 +43,15 @@
             this.btnCashier.TabIndex = 0;
             this.btnCashier.Text = "Cashier";
             this.btnCashier.UseVisualStyleBackColor = true;
+            this.btnCashier.Click += new System.EventHandler(this.btnCashier_Click);
             // 
             // lblQueue
             // 
             this.lblQueue.AutoSize = true;
-            this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQueue.Location = new System.Drawing.Point(357, 36);
+            this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueue.Location = new System.Drawing.Point(323, 133);
             this.lblQueue.Name = "lblQueue";
-            this.lblQueue.Size = new System.Drawing.Size(198, 29);
+            this.lblQueue.Size = new System.Drawing.Size(355, 52);
             this.lblQueue.TabIndex = 1;
             this.lblQueue.Text = "Postion in Queue";
             this.lblQueue.Click += new System.EventHandler(this.label1_Click);
@@ -66,7 +67,7 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "*Click to get a number";
             // 
-            // Form1
+            // QueuingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -74,8 +75,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblQueue);
             this.Controls.Add(this.btnCashier);
-            this.Name = "Form1";
+            this.Name = "QueuingForm";
             this.Text = "QueuingForm ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
