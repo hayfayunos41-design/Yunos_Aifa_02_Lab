@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Yunos_Aifa_02_Lab
 {
-    public partial class Form1 : Form
+    public partial class CashierWindowQueueForm : Form
     {
-        public Form1()
+        public CashierWindowQueueForm()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
