@@ -51,9 +51,9 @@
             this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQueue.Location = new System.Drawing.Point(323, 133);
             this.lblQueue.Name = "lblQueue";
-            this.lblQueue.Size = new System.Drawing.Size(355, 52);
+            this.lblQueue.Size = new System.Drawing.Size(365, 52);
             this.lblQueue.TabIndex = 1;
-            this.lblQueue.Text = "Postion in Queue";
+            this.lblQueue.Text = "Position in Queue";
             this.lblQueue.Click += new System.EventHandler(this.label1_Click);
             // 
             // label1

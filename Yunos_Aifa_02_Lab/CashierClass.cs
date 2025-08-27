@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 public class CashierClass
 {
+    public static string NowServing = "";
+
     private int x;
     public static string getNumberInQueue = "";
     public static Queue<string> CashierQueue;
 
+    
     public CashierClass()
     {
         x = 10000; // starting number

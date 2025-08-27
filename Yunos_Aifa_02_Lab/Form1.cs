@@ -32,14 +32,26 @@ namespace Yunos_Aifa_02_Lab
 
         private void btnCashier_Click(object sender, EventArgs e)
         {
-            lblQueue.Text = cashier.CashierGeneratedNumber("P - ");
+            lblQueue.Text = cashier.CashierGeneratedNumber("P-");
             CashierClass.getNumberInQueue = lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
+
+
         }
         private void btnOpenCashier_Click(object sender, EventArgs e)
         {
-            CashierWindowQueueForm form2 = new CashierWindowQueueForm();
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm is CashierWindowQueueForm)
+                {
+                    frm.Focus();
+                    return;
+                    {
 
+                    }
+                }
+            }
+            CashierWindowQueueForm form2 = new CashierWindowQueueForm();
             form2.Show();
         }
     }

@@ -16,6 +16,9 @@ namespace Yunos_Aifa_02_Lab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            var QueuingForm = new QueuingForm();
+            var CashierWindowQueuingForm = new CashierWindowQueueForm();
+            CashierWindowQueuingForm.Show();
             Application.Run(new QueuingForm());
         }
     }
