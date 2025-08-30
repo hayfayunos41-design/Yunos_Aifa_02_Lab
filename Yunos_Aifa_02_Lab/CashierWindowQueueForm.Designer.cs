@@ -63,11 +63,12 @@
             // 
             this.listCashierQueue.BackColor = System.Drawing.Color.White;
             this.listCashierQueue.HideSelection = false;
-            this.listCashierQueue.Location = new System.Drawing.Point(217, 37);
+            this.listCashierQueue.Location = new System.Drawing.Point(227, 22);
             this.listCashierQueue.Name = "listCashierQueue";
-            this.listCashierQueue.Size = new System.Drawing.Size(571, 387);
+            this.listCashierQueue.Size = new System.Drawing.Size(411, 401);
             this.listCashierQueue.TabIndex = 2;
             this.listCashierQueue.UseCompatibleStateImageBehavior = false;
+            this.listCashierQueue.View = System.Windows.Forms.View.Tile;
             this.listCashierQueue.SelectedIndexChanged += new System.EventHandler(this.listCashierQueue_SelectedIndexChanged);
             // 
             // CashierWindowQueueForm

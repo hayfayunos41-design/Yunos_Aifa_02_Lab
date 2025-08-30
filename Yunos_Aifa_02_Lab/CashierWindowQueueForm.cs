@@ -45,8 +45,10 @@ namespace Yunos_Aifa_02_Lab
                     string served = CashierClass.CashierQueue.Dequeue();
                     CashierClass.NowServing = served;
 
-                    if (nowServingForm == null || nowServingForm.IsDisposed)
-                    {
+                     DisplayCashierQueue(CashierClass.CashierQueue);
+
+                if (nowServingForm == null || nowServingForm.IsDisposed)
+                {
                         nowServingForm = new NowServingForm(); 
                         nowServingForm.Show();
                     }
@@ -67,8 +69,8 @@ namespace Yunos_Aifa_02_Lab
                 listCashierQueue.Items.Clear();
                 foreach (Object obj in CashierList)
                 {
-                    listCashierQueue.Items.Add(obj.ToString());
-                }
+                listCashierQueue.Items.Add(obj.ToString());
+            }
             }
 
         private void listCashierQueue_SelectedIndexChanged(object sender, EventArgs e)

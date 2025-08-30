@@ -37,8 +37,6 @@ namespace Yunos_Aifa_02_Lab
             CashierClass.getNumberInQueue = lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
 
-           
-
         }
         private void btnOpenCashier_Click(object sender, EventArgs e)
         {

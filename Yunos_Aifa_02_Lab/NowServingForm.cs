@@ -26,7 +26,7 @@ namespace Yunos_Aifa_02_Lab
         }
         private void NowServingForm_Load(object sender, EventArgs e)
         {
-            lblNowServing.Text = "Now Serving: -";
+            lblNowServing.Text = "Now Serving: ";
             
         }
 
