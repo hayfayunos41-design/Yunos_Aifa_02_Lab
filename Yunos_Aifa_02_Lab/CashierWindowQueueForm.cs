@@ -12,8 +12,10 @@ using System.Windows.Forms;
 namespace Yunos_Aifa_02_Lab
 {
     public partial class CashierWindowQueueForm : Form
-    {
+
+    { 
         private Timer timer = new Timer();
+        NowServingForm nowServingForm;
         public CashierWindowQueueForm()
         {
             InitializeComponent();
@@ -41,17 +43,23 @@ namespace Yunos_Aifa_02_Lab
             if (CashierClass.CashierQueue.Count > 0)
             {
                 string served = CashierClass.CashierQueue.Dequeue();
-                MessageBox.Show($"Now Serving: {served}", "Cashier Window");
+                CashierClass.NowServing = served;
 
-                DisplayCashierQueue(CashierClass.CashierQueue);
+                if (nowServingForm == null || nowServingForm.IsDisposed)
+                {
+                    nowServingForm = new NowServingForm();
+                    nowServingForm.Show();
+                }
             }
             else
             {
-                MessageBox.Show("No more in Queue!", "Cashier Window");
+                nowServingForm.BringToFront();
             }
-
+               
             DisplayCashierQueue(CashierClass.CashierQueue);
         }
+        else
+         {
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -65,5 +73,5 @@ namespace Yunos_Aifa_02_Lab
             }
         }
     }
-    }
+ }
 

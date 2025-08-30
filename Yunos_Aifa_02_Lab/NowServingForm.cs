@@ -14,13 +14,14 @@ namespace Yunos_Aifa_02_Lab
     {
         Timer timer = new Timer();
         public NowServingForm()
-        {
+        { 
+           
             InitializeComponent();
-
 
             timer.Interval = 1000;
             timer.Tick += timer_Tick;
             timer.Start();
+
         }
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -41,17 +42,14 @@ namespace Yunos_Aifa_02_Lab
 
         private void lblNowServing_Click(object sender, EventArgs e)
         {
-            foreach (Form frm in Application.OpenForms)
-            {
-                if (frm is NowServingForm)
-                {
-
-                }
-
-            }
-
         }
-       NowServingForm form3= new NowServingForm();
-        form3.Show();
-    }
+        public void ShowNowServing(string student)
+        {
+            lblNowServing.Text = student;
+            this.Show();
+            this.BringToFront();
+        }
+    
+        }
 }
+
