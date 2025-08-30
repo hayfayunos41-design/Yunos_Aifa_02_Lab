@@ -35,6 +35,7 @@
             // 
             // btnCashier
             // 
+            this.btnCashier.BackColor = System.Drawing.Color.Snow;
             this.btnCashier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCashier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCashier.Location = new System.Drawing.Point(69, 94);
@@ -42,14 +43,14 @@
             this.btnCashier.Size = new System.Drawing.Size(164, 145);
             this.btnCashier.TabIndex = 0;
             this.btnCashier.Text = "Cashier";
-            this.btnCashier.UseVisualStyleBackColor = true;
+            this.btnCashier.UseVisualStyleBackColor = false;
             this.btnCashier.Click += new System.EventHandler(this.btnCashier_Click);
             // 
             // lblQueue
             // 
             this.lblQueue.AutoSize = true;
             this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQueue.Location = new System.Drawing.Point(323, 133);
+            this.lblQueue.Location = new System.Drawing.Point(315, 133);
             this.lblQueue.Name = "lblQueue";
             this.lblQueue.Size = new System.Drawing.Size(365, 52);
             this.lblQueue.TabIndex = 1;
@@ -71,6 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblQueue);

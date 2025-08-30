@@ -19,9 +19,6 @@ namespace Yunos_Aifa_02_Lab
             var QueuingForm = new QueuingForm();
             var CashierWindowQueuingForm = new CashierWindowQueueForm();
             CashierWindowQueuingForm.Show();
-
-            var Customer = new CustomerView();
-            Customer.Show();
             Application.Run(new QueuingForm());
         }
     }

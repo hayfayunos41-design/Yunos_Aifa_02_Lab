@@ -34,10 +34,10 @@
             // lblNowServing
             // 
             this.lblNowServing.AutoSize = true;
-            this.lblNowServing.Font = new System.Drawing.Font("Calisto MT", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNowServing.Location = new System.Drawing.Point(91, 127);
+            this.lblNowServing.Font = new System.Drawing.Font("Calisto MT", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNowServing.Location = new System.Drawing.Point(48, 105);
             this.lblNowServing.Name = "lblNowServing";
-            this.lblNowServing.Size = new System.Drawing.Size(210, 37);
+            this.lblNowServing.Size = new System.Drawing.Size(296, 50);
             this.lblNowServing.TabIndex = 0;
             this.lblNowServing.Text = "*Now Serving";
             this.lblNowServing.Click += new System.EventHandler(this.lblNowServing_Click);
@@ -46,6 +46,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblNowServing);
             this.Name = "NowServingForm";

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,7 +28,7 @@ namespace Yunos_Aifa_02_Lab
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCashier_Click(object sender, EventArgs e)
@@ -36,6 +37,7 @@ namespace Yunos_Aifa_02_Lab
             CashierClass.getNumberInQueue = lblQueue.Text;
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
 
+           
 
         }
         private void btnOpenCashier_Click(object sender, EventArgs e)

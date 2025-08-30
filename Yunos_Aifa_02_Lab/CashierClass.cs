@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public class CashierClass
 {
-    private int x;
+    private static int x;
     public static string getNumberInQueue = "";
     public static Queue<string> CashierQueue;
 
