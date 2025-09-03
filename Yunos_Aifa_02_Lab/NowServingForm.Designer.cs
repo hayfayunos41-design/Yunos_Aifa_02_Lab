@@ -35,7 +35,7 @@
             // 
             this.lblNowServing.AutoSize = true;
             this.lblNowServing.Font = new System.Drawing.Font("Calisto MT", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNowServing.Location = new System.Drawing.Point(48, 105);
+            this.lblNowServing.Location = new System.Drawing.Point(71, 72);
             this.lblNowServing.Name = "lblNowServing";
             this.lblNowServing.Size = new System.Drawing.Size(296, 50);
             this.lblNowServing.TabIndex = 0;
