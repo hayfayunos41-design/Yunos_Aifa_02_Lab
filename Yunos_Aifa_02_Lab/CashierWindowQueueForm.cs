@@ -49,9 +49,9 @@ namespace Yunos_Aifa_02_Lab
 
                 if (nowServingForm == null || nowServingForm.IsDisposed)
                 {
-                        nowServingForm = new NowServingForm(); 
-                        nowServingForm.Show();
-                    }
+                    nowServingForm = new NowServingForm();
+                    nowServingForm.Show();
+                }
                     nowServingForm.UpdateNowServing(served);
 
                     DisplayCashierQueue(CashierClass.CashierQueue);
