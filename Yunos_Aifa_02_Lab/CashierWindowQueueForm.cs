@@ -34,9 +34,9 @@ namespace Yunos_Aifa_02_Lab
 
             private void btnRefresh_Click(object sender, EventArgs e)
             {
-                DisplayCashierQueue(CashierClass.CashierQueue);
-            
-            }
+            DisplayCashierQueue(CashierClass.CashierQueue);
+
+        }
 
             private void btnNext_Click(object sender, EventArgs e)
             {
