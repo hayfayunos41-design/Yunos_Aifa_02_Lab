@@ -42,10 +42,10 @@ namespace Yunos_Aifa_02_Lab
             {
                 if (CashierClass.CashierQueue.Count > 0)
                 {
-                    string served = CashierClass.CashierQueue.Dequeue();
-                    CashierClass.NowServing = served;
+                string served = CashierClass.CashierQueue.Dequeue();
+                CashierClass.NowServing = served;
 
-                     DisplayCashierQueue(CashierClass.CashierQueue);
+                DisplayCashierQueue(CashierClass.CashierQueue);
 
                 if (nowServingForm == null || nowServingForm.IsDisposed)
                 {
